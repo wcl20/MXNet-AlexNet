@@ -8,6 +8,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--prefix", required=True, help="Name of model")
+    parser.add_argument("--checkpoints", required=True, help="Name of checkpoints directory")
     parser.add_argument("--epoch", type=int, required=True, help="Epoch to load")
     args = parser.parse_args()
 
@@ -25,7 +26,7 @@ def main():
     )
 
     # Load model
-    checkpoints_path = os.path.sep.join(["output", "checkpoints", args.prefix])
+    checkpoints_path = os.path.sep.join(["output", args.checkpoints, args.prefix])
     model = mx.model.FeedForward.load(checkpoints_path, args.epoch)
 
     # Compile model

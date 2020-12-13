@@ -8,11 +8,12 @@ from core.nn import AlexNet
 
 
 parser = argparse.ArgumentParser()
+parser.add_argument("--checkpoints", required=True, help="Name of checkpoints directory")
 parser.add_argument("--prefix", required=True, help="Name of model")
 parser.add_argument("-s", "--start", type=int, default=0, help="Epoch to restart training.")
 args = parser.parse_args()
 
-logging.basicConfig(level=logging.DEBUG, filename=f"training_{args.start}.log", filemode="w")
+logging.basicConfig(level=logging.DEBUG, filename=os.path.sep.join(["output", args.checkpoints, "logs", f"training_{args.start}.log"]), filemode="w")
 
 # Load means
 means = json.loads(open(config.MEAN_PATH).read())
@@ -44,16 +45,16 @@ valid_iter = mx.io.ImageRecordIter(
 )
 
 # Optimizer
-optimizer = mx.optimizer.SGD(learning_rate=1e-2, momentum=0.9, wd=0.0005, rescale_grad=1.0 / batch_size)
+optimizer = mx.optimizer.SGD(learning_rate=1e-3, momentum=0.9, wd=0.0005, rescale_grad=1.0 / batch_size)
 
 # Checkpoints
-os.makedirs(os.path.sep.join(["output", "checkpoints"]), exist_ok=True)
-checkpoints_path = os.path.sep.join(["output", "checkpoints", args.prefix])
+os.makedirs(os.path.sep.join(["output", args.checkpoints]), exist_ok=True)
+checkpoints_path = os.path.sep.join(["output", args.checkpoints, args.prefix])
 
 if args.start <= 0:
     # Build model
     print("[INFO] Building model ...")
-    model = AlexNet.build(config.NUM_CLASSES)
+    model = AlexNet.build_experiment_1(config.NUM_CLASSES)
     arg_params = None
     aux_params = None
 else:
@@ -64,7 +65,7 @@ else:
 
 # Compile model
 model = mx.model.FeedForward(
-    ctx=[mx.gpu(1), mx.gpu(2), mx.gpu(3)],
+    ctx=[mx.gpu(i) for i in range(config.NUM_DEVICES)],
     symbol=model,
     initializer=mx.initializer.Xavier(),
     arg_params=arg_params,

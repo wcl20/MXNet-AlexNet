@@ -36,4 +36,4 @@ TEST_MX_REC = os.path.sep.join([MX_OUTPUT, "rec/test.rec"])
 MEAN_PATH = "output/mean.json"
 
 BATCH_SIZE = 128
-NUM_DEVICES = 8
+NUM_DEVICES = 3
