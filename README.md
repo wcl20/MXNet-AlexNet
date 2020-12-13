@@ -112,7 +112,12 @@ mv datasets/imagenet/lists/*.idx datasets/imagenet/rec/
 ## Train 
 ```bash
 cd MXNet-AlexNet
-python3 train.py --prefix alexnet
+python3 train.py --checkpoints checkpoints --prefix alexnet
+```
+
+## Test
+```bash
+python3 test.py --checkpoints checkpoints --prefix alexnet
 ```
 
 
