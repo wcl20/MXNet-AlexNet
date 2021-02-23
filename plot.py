@@ -8,9 +8,9 @@ def main():
 
     logs = [
         # (log file, ending epoch)
-        ("output/experiment1/logs/training_0.log", 50),
-        ("output/experiment1/logs/training_50.log", 90),
-
+        ("output/experiment3/logs/training_0.log", 60),
+        ("output/experiment3/logs/training_65.log", 85),
+        ("output/experiment3/logs/training_85.log", 100),
     ]
 
     train_rank1, train_rank5, train_loss = [], [], []
@@ -43,7 +43,7 @@ def main():
         batch_valid_rank5 = [float(rank5) for rank5 in batch_valid_rank5]
         batch_valid_loss = [float(loss) for loss in batch_valid_loss]
 
-        end = end_epoch if i == 0 else logs[i-1][1]
+        end = end_epoch if i == 0 else end_epoch - logs[i-1][1]
         train_rank1.extend(batch_train_rank1[:end])
         train_rank5.extend(batch_train_rank5[:end])
         train_loss.extend(batch_train_loss[:end])

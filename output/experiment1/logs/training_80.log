@@ -1,0 +1,121 @@
+INFO:root:Start training with [gpu(2), gpu(3), gpu(4)]
+INFO:root:Epoch[80] Batch [0-500]	Speed: 2364.57 samples/sec	accuracy=0.591698	top_k_accuracy_5=0.819620	cross-entropy=1.734975
+INFO:root:Epoch[80] Batch [500-1000]	Speed: 2386.37 samples/sec	accuracy=0.591646	top_k_accuracy_5=0.820292	cross-entropy=1.728752
+INFO:root:Epoch[80] Batch [1000-1500]	Speed: 534.52 samples/sec	accuracy=0.595490	top_k_accuracy_5=0.822036	cross-entropy=1.717762
+INFO:root:Epoch[80] Batch [1500-2000]	Speed: 1951.95 samples/sec	accuracy=0.594625	top_k_accuracy_5=0.821016	cross-entropy=1.719287
+INFO:root:Epoch[80] Batch [2000-2500]	Speed: 2352.75 samples/sec	accuracy=0.597010	top_k_accuracy_5=0.823182	cross-entropy=1.707421
+INFO:root:Epoch[80] Batch [2500-3000]	Speed: 2288.95 samples/sec	accuracy=0.599839	top_k_accuracy_5=0.825464	cross-entropy=1.699239
+INFO:root:Epoch[80] Resetting Data Iterator
+INFO:root:Epoch[80] Time cost=822.310
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0081.params"
+INFO:root:Epoch[80] Validation-accuracy=0.550430
+INFO:root:Epoch[80] Validation-top_k_accuracy_5=0.783089
+INFO:root:Epoch[80] Validation-cross-entropy=1.949468
+INFO:root:Epoch[81] Batch [0-500]	Speed: 1098.39 samples/sec	accuracy=0.591531	top_k_accuracy_5=0.820427	cross-entropy=1.731425
+INFO:root:Epoch[81] Batch [500-1000]	Speed: 959.66 samples/sec	accuracy=0.594125	top_k_accuracy_5=0.820979	cross-entropy=1.724995
+INFO:root:Epoch[81] Batch [1000-1500]	Speed: 2308.46 samples/sec	accuracy=0.594911	top_k_accuracy_5=0.821859	cross-entropy=1.721463
+INFO:root:Epoch[81] Batch [1500-2000]	Speed: 2318.46 samples/sec	accuracy=0.594266	top_k_accuracy_5=0.821906	cross-entropy=1.722858
+INFO:root:Epoch[81] Batch [2000-2500]	Speed: 2280.91 samples/sec	accuracy=0.597786	top_k_accuracy_5=0.824490	cross-entropy=1.703514
+INFO:root:Epoch[81] Batch [2500-3000]	Speed: 602.07 samples/sec	accuracy=0.596865	top_k_accuracy_5=0.824661	cross-entropy=1.705017
+INFO:root:Epoch[81] Resetting Data Iterator
+INFO:root:Epoch[81] Time cost=1000.391
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0082.params"
+INFO:root:Epoch[81] Validation-accuracy=0.551071
+INFO:root:Epoch[81] Validation-top_k_accuracy_5=0.783069
+INFO:root:Epoch[81] Validation-cross-entropy=1.947619
+INFO:root:Epoch[82] Batch [0-500]	Speed: 1841.71 samples/sec	accuracy=0.592349	top_k_accuracy_5=0.820406	cross-entropy=1.729069
+INFO:root:Epoch[82] Batch [500-1000]	Speed: 2250.35 samples/sec	accuracy=0.593385	top_k_accuracy_5=0.820911	cross-entropy=1.725017
+INFO:root:Epoch[82] Batch [1000-1500]	Speed: 1529.87 samples/sec	accuracy=0.594693	top_k_accuracy_5=0.820698	cross-entropy=1.722870
+INFO:root:Epoch[82] Batch [1500-2000]	Speed: 2363.28 samples/sec	accuracy=0.594536	top_k_accuracy_5=0.821266	cross-entropy=1.724846
+INFO:root:Epoch[82] Batch [2000-2500]	Speed: 2416.34 samples/sec	accuracy=0.598323	top_k_accuracy_5=0.825901	cross-entropy=1.700484
+INFO:root:Epoch[82] Batch [2500-3000]	Speed: 2417.57 samples/sec	accuracy=0.600104	top_k_accuracy_5=0.824177	cross-entropy=1.702385
+INFO:root:Epoch[82] Resetting Data Iterator
+INFO:root:Epoch[82] Time cost=587.737
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0083.params"
+INFO:root:Epoch[82] Validation-accuracy=0.550657
+INFO:root:Epoch[82] Validation-top_k_accuracy_5=0.783151
+INFO:root:Epoch[82] Validation-cross-entropy=1.948616
+INFO:root:Epoch[83] Batch [0-500]	Speed: 2397.67 samples/sec	accuracy=0.591469	top_k_accuracy_5=0.819813	cross-entropy=1.733979
+INFO:root:Epoch[83] Batch [500-1000]	Speed: 2344.17 samples/sec	accuracy=0.594031	top_k_accuracy_5=0.821214	cross-entropy=1.724622
+INFO:root:Epoch[83] Batch [1000-1500]	Speed: 2286.84 samples/sec	accuracy=0.595375	top_k_accuracy_5=0.822167	cross-entropy=1.719251
+INFO:root:Epoch[83] Batch [1500-2000]	Speed: 463.29 samples/sec	accuracy=0.594156	top_k_accuracy_5=0.821807	cross-entropy=1.721598
+INFO:root:Epoch[83] Batch [2000-2500]	Speed: 2283.40 samples/sec	accuracy=0.596333	top_k_accuracy_5=0.824615	cross-entropy=1.704363
+INFO:root:Epoch[83] Batch [2500-3000]	Speed: 2283.92 samples/sec	accuracy=0.599339	top_k_accuracy_5=0.823672	cross-entropy=1.702373
+INFO:root:Epoch[83] Resetting Data Iterator
+INFO:root:Epoch[83] Time cost=864.002
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0084.params"
+INFO:root:Epoch[83] Validation-accuracy=0.550595
+INFO:root:Epoch[83] Validation-top_k_accuracy_5=0.783358
+INFO:root:Epoch[83] Validation-cross-entropy=1.948103
+INFO:root:Epoch[84] Batch [0-500]	Speed: 2229.95 samples/sec	accuracy=0.593328	top_k_accuracy_5=0.820667	cross-entropy=1.727519
+INFO:root:Epoch[84] Batch [500-1000]	Speed: 2136.21 samples/sec	accuracy=0.593214	top_k_accuracy_5=0.821849	cross-entropy=1.723976
+INFO:root:Epoch[84] Batch [1000-1500]	Speed: 510.39 samples/sec	accuracy=0.595083	top_k_accuracy_5=0.822297	cross-entropy=1.717751
+INFO:root:Epoch[84] Batch [1500-2000]	Speed: 2299.86 samples/sec	accuracy=0.595573	top_k_accuracy_5=0.823323	cross-entropy=1.713448
+INFO:root:Epoch[84] Batch [2000-2500]	Speed: 2350.83 samples/sec	accuracy=0.597833	top_k_accuracy_5=0.825130	cross-entropy=1.703058
+INFO:root:Epoch[84] Batch [2500-3000]	Speed: 2288.96 samples/sec	accuracy=0.597719	top_k_accuracy_5=0.824661	cross-entropy=1.706110
+INFO:root:Epoch[84] Resetting Data Iterator
+INFO:root:Epoch[84] Time cost=835.829
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0085.params"
+INFO:root:Epoch[84] Validation-accuracy=0.551298
+INFO:root:Epoch[84] Validation-top_k_accuracy_5=0.783255
+INFO:root:Epoch[84] Validation-cross-entropy=1.946892
+INFO:root:Epoch[85] Batch [0-500]	Speed: 962.15 samples/sec	accuracy=0.591979	top_k_accuracy_5=0.820578	cross-entropy=1.727741
+INFO:root:Epoch[85] Batch [500-1000]	Speed: 2322.78 samples/sec	accuracy=0.593906	top_k_accuracy_5=0.820771	cross-entropy=1.723568
+INFO:root:Epoch[85] Batch [1000-1500]	Speed: 2088.09 samples/sec	accuracy=0.596453	top_k_accuracy_5=0.822484	cross-entropy=1.717175
+INFO:root:Epoch[85] Batch [1500-2000]	Speed: 1152.58 samples/sec	accuracy=0.594557	top_k_accuracy_5=0.821323	cross-entropy=1.721616
+INFO:root:Epoch[85] Batch [2000-2500]	Speed: 2143.04 samples/sec	accuracy=0.597693	top_k_accuracy_5=0.825161	cross-entropy=1.702169
+INFO:root:Epoch[85] Batch [2500-3000]	Speed: 1667.57 samples/sec	accuracy=0.599359	top_k_accuracy_5=0.824807	cross-entropy=1.699064
+INFO:root:Epoch[85] Resetting Data Iterator
+INFO:root:Epoch[85] Time cost=787.196
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0086.params"
+INFO:root:Epoch[85] Validation-accuracy=0.551133
+INFO:root:Epoch[85] Validation-top_k_accuracy_5=0.783131
+INFO:root:Epoch[85] Validation-cross-entropy=1.948388
+INFO:root:Epoch[86] Batch [0-500]	Speed: 2017.60 samples/sec	accuracy=0.593370	top_k_accuracy_5=0.820089	cross-entropy=1.727804
+INFO:root:Epoch[86] Batch [500-1000]	Speed: 2368.51 samples/sec	accuracy=0.593271	top_k_accuracy_5=0.821391	cross-entropy=1.723331
+INFO:root:Epoch[86] Batch [1000-1500]	Speed: 2357.00 samples/sec	accuracy=0.597359	top_k_accuracy_5=0.823130	cross-entropy=1.711132
+INFO:root:Epoch[86] Batch [1500-2000]	Speed: 1042.39 samples/sec	accuracy=0.596479	top_k_accuracy_5=0.822156	cross-entropy=1.714053
+INFO:root:Epoch[86] Batch [2000-2500]	Speed: 1968.08 samples/sec	accuracy=0.597859	top_k_accuracy_5=0.824932	cross-entropy=1.699632
+INFO:root:Epoch[86] Batch [2500-3000]	Speed: 1904.44 samples/sec	accuracy=0.599432	top_k_accuracy_5=0.824969	cross-entropy=1.698914
+INFO:root:Epoch[86] Resetting Data Iterator
+INFO:root:Epoch[86] Time cost=685.357
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0087.params"
+INFO:root:Epoch[86] Validation-accuracy=0.551794
+INFO:root:Epoch[86] Validation-top_k_accuracy_5=0.782717
+INFO:root:Epoch[86] Validation-cross-entropy=1.946440
+INFO:root:Epoch[87] Batch [0-500]	Speed: 1765.27 samples/sec	accuracy=0.593380	top_k_accuracy_5=0.819599	cross-entropy=1.728603
+INFO:root:Epoch[87] Batch [500-1000]	Speed: 1887.20 samples/sec	accuracy=0.594620	top_k_accuracy_5=0.821708	cross-entropy=1.720027
+INFO:root:Epoch[87] Batch [1000-1500]	Speed: 2341.90 samples/sec	accuracy=0.596417	top_k_accuracy_5=0.822333	cross-entropy=1.713801
+INFO:root:Epoch[87] Batch [1500-2000]	Speed: 2367.25 samples/sec	accuracy=0.594510	top_k_accuracy_5=0.821260	cross-entropy=1.719366
+INFO:root:Epoch[87] Batch [2000-2500]	Speed: 1754.33 samples/sec	accuracy=0.597875	top_k_accuracy_5=0.825349	cross-entropy=1.701618
+INFO:root:Epoch[87] Batch [2500-3000]	Speed: 1324.16 samples/sec	accuracy=0.598557	top_k_accuracy_5=0.824719	cross-entropy=1.701524
+INFO:root:Epoch[87] Resetting Data Iterator
+INFO:root:Epoch[87] Time cost=665.229
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0088.params"
+INFO:root:Epoch[87] Validation-accuracy=0.551711
+INFO:root:Epoch[87] Validation-top_k_accuracy_5=0.782697
+INFO:root:Epoch[87] Validation-cross-entropy=1.946290
+INFO:root:Epoch[88] Batch [0-500]	Speed: 1530.89 samples/sec	accuracy=0.593474	top_k_accuracy_5=0.820667	cross-entropy=1.729092
+INFO:root:Epoch[88] Batch [500-1000]	Speed: 1846.22 samples/sec	accuracy=0.595755	top_k_accuracy_5=0.820417	cross-entropy=1.720768
+INFO:root:Epoch[88] Batch [1000-1500]	Speed: 1494.72 samples/sec	accuracy=0.598234	top_k_accuracy_5=0.822469	cross-entropy=1.711320
+INFO:root:Epoch[88] Batch [1500-2000]	Speed: 1573.11 samples/sec	accuracy=0.595365	top_k_accuracy_5=0.822448	cross-entropy=1.714914
+INFO:root:Epoch[88] Batch [2000-2500]	Speed: 1788.70 samples/sec	accuracy=0.599094	top_k_accuracy_5=0.825828	cross-entropy=1.698200
+INFO:root:Epoch[88] Batch [2500-3000]	Speed: 1835.77 samples/sec	accuracy=0.600068	top_k_accuracy_5=0.824573	cross-entropy=1.699362
+INFO:root:Epoch[88] Resetting Data Iterator
+INFO:root:Epoch[88] Time cost=737.605
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0089.params"
+INFO:root:Epoch[88] Validation-accuracy=0.551567
+INFO:root:Epoch[88] Validation-top_k_accuracy_5=0.783172
+INFO:root:Epoch[88] Validation-cross-entropy=1.946522
+INFO:root:Epoch[89] Batch [0-500]	Speed: 1718.33 samples/sec	accuracy=0.593313	top_k_accuracy_5=0.821865	cross-entropy=1.724566
+INFO:root:Epoch[89] Batch [500-1000]	Speed: 1859.87 samples/sec	accuracy=0.594068	top_k_accuracy_5=0.820396	cross-entropy=1.723634
+INFO:root:Epoch[89] Batch [1000-1500]	Speed: 1837.80 samples/sec	accuracy=0.595964	top_k_accuracy_5=0.821594	cross-entropy=1.717518
+INFO:root:Epoch[89] Batch [1500-2000]	Speed: 1802.80 samples/sec	accuracy=0.594786	top_k_accuracy_5=0.822672	cross-entropy=1.717745
+INFO:root:Epoch[89] Batch [2000-2500]	Speed: 1764.54 samples/sec	accuracy=0.596708	top_k_accuracy_5=0.824453	cross-entropy=1.706206
+INFO:root:Epoch[89] Batch [2500-3000]	Speed: 1805.78 samples/sec	accuracy=0.598630	top_k_accuracy_5=0.824677	cross-entropy=1.703033
+INFO:root:Epoch[89] Resetting Data Iterator
+INFO:root:Epoch[89] Time cost=686.015
+INFO:root:Saved checkpoint to "output/experiment1/alexnet-0090.params"
+INFO:root:Epoch[89] Validation-accuracy=0.551505
+INFO:root:Epoch[89] Validation-top_k_accuracy_5=0.783668
+INFO:root:Epoch[89] Validation-cross-entropy=1.946121

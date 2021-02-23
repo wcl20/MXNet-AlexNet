@@ -7,8 +7,8 @@ from config import config
 def main():
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prefix", required=True, help="Name of model")
     parser.add_argument("--checkpoints", required=True, help="Name of checkpoints directory")
+    parser.add_argument("--prefix", required=True, help="Name of model")
     parser.add_argument("--epoch", type=int, required=True, help="Epoch to load")
     args = parser.parse_args()
 
@@ -31,7 +31,7 @@ def main():
 
     # Compile model
     model = mx.model.FeedForward(
-        ctx=[mx.gpu(0)],
+        ctx=[mx.gpu(2)],
         symbol=model.symbol,
         arg_params=model.arg_params,
         aux_params=model.aux_params

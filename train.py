@@ -13,6 +13,7 @@ parser.add_argument("--prefix", required=True, help="Name of model")
 parser.add_argument("-s", "--start", type=int, default=0, help="Epoch to restart training.")
 args = parser.parse_args()
 
+os.makedirs(os.path.sep.join(["output", args.checkpoints, "logs"]), exist_ok=True)
 logging.basicConfig(level=logging.DEBUG, filename=os.path.sep.join(["output", args.checkpoints, "logs", f"training_{args.start}.log"]), filemode="w")
 
 # Load means
@@ -45,7 +46,7 @@ valid_iter = mx.io.ImageRecordIter(
 )
 
 # Optimizer
-optimizer = mx.optimizer.SGD(learning_rate=1e-3, momentum=0.9, wd=0.0005, rescale_grad=1.0 / batch_size)
+optimizer = mx.optimizer.SGD(learning_rate=1e-4, momentum=0.9, wd=0.0005, rescale_grad=1.0 / batch_size)
 
 # Checkpoints
 os.makedirs(os.path.sep.join(["output", args.checkpoints]), exist_ok=True)
@@ -54,7 +55,7 @@ checkpoints_path = os.path.sep.join(["output", args.checkpoints, args.prefix])
 if args.start <= 0:
     # Build model
     print("[INFO] Building model ...")
-    model = AlexNet.build_experiment_1(config.NUM_CLASSES)
+    model = AlexNet.build_experiment_3(config.NUM_CLASSES)
     arg_params = None
     aux_params = None
 else:
@@ -71,7 +72,7 @@ model = mx.model.FeedForward(
     arg_params=arg_params,
     aux_params=aux_params,
     optimizer=optimizer,
-    num_epoch=90,
+    num_epoch=100,
     begin_epoch=args.start
 )
 

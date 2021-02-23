@@ -120,7 +120,7 @@ class AlexNet:
 
     @staticmethod
     def build_experiment_3(num_classes):
-        '''Experiment 2
+        '''Experiment 3
 
         Placing Batch normalization layer AFTER activation layer.
         Using standard ELU activation function.

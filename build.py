@@ -1,6 +1,7 @@
 import cv2
 import json
 import numpy as np
+import os
 import tqdm
 from config import config
 from core.utils import ImageNetHelper
@@ -45,6 +46,7 @@ def main():
                 B.append(b)
         file.close()
 
+    os.makedirs("output", exist_ok=True)
     file = open(config.MEAN_PATH, "w")
     file.write(json.dumps({ "R": np.mean(R), "G": np.mean(G), "B": np.mean(B) }))
     file.close()
